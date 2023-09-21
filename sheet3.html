@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sheet3</title>
+    <link rel="style.css" type="text/css" href="style.css">
+</head>
+
+<body>
+<h1>CV FORM</h1>
+
+<form>
+    <fieldset>  
+        <legend>Personal Information:</legend>  
+    
+ 
+<label>Name:</label>
+<br>
+<input type="text">
+<br><br>
+<label for="gender">Gender:</label>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="female">Female</label>
+<br>
+<label><br>Enter a phone number:</label>
+<br>
+<input type="tel" id="phone" name="phone" placeholder="555-55-555" pattern=" [0-9]{3}-
+[0-9]{2}-[0-9]{3}" required> <small>Format: 555-55-555</small><br><br>
+
+<label><br>Your linkedin page:</label>
+<input type="url">
+
+<label>EMAIL:</label>
+<input type="email">
+</fieldset>  
+</form>
+<form>
+    <label> <br> Years of experience (between 3 and 10):</label>
+<input type="number" max="10" min="3"required/>
+
+    <p><label>  <br>Expected salary :</label>
+        4000 <input type="range" min="4000" max="10000" value="5000" steps="1">10000</p>
+        <label for="language">language:</label><br>
+
+
+        <input type="checkbox" id="Arabic" name="language" value="Arabic">
+        <label for="Arabic">Arabic</label><br>
+        <input type="checkbox" id="English" name="language" value="English">
+        <label for="English"> English</label> <br><br>
+
+        <label>Upload Your CV</label>
+        <input type="file" id="choose file" name="choose file"><br>
+
+        <label for="week">The nearest week you can start work</label>
+        <input type="week"><br><br>
+        <label for="month">The nearest month you can start work</label>
+        <input  type="month"><br><br>
+        <label for="time">The best time to work</label>
+        <input type="time"><br><br>
+
+        <label>majors</label>
+        <input type="text"><br>
+        <br>
+
+        <label>why you want to work with us</label><br>
+        <textarea id="work" name="work" rows="6" cols="120"></textarea>
+<br>
+        <input type="submit" value="Send">
+        <input type="reset"  value="Reset">
+</form>
+</body>
+</html>
+
+
+
+
+
+
+    
+

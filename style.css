@@ -1,0 +1,51 @@
+body{
+background-image: url("imagen.jpg");
+background-position: top right;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: 110px;
+   background-color: rgb(105, 187, 187) ;
+    
+}
+h1,h2{
+    color: rgb(192, 43, 226);
+}
+ul{
+   font-size: medium; 
+   font-weight: 600;
+   list-style: square;
+}
+ol{
+    list-style: upper-roman;
+}
+ol ol{
+list-style: lower-roman;
+
+}
+a:visited{
+    text-decoration: none;
+    color: rgb(132, 203, 61);
+}
+a:link{
+text-decoration: none;
+color: black;
+
+}
+a:hover{
+    text-decoration: underline;
+    color: rgb(180, 11, 11);
+}
+a:active{
+text-decoration: underline;    
+color: blue;
+}
+.prgraph1{
+    font-size: small;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(87, 78, 78);
+}
+.prgraph2{
+font-size: larger;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: bisque;
+}
