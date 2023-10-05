@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>sheet6</title>
+    <meta charset="UTF-8">
+
+    <script>
+    function add(){
+    var num1=parseInt(document.getElementById('n1').value);
+    var num2=parseInt(document.getElementById('n2').value)
+    var resulte=num1+num2;
+    document.getElementById('re').innerHTML=resulte;
+    }
+
+    function mul(){
+    var num1=parseInt(document.getElementById('n1').value);
+    var num2=parseInt(document.getElementById('n2').value)
+    var resulte=num1*num2;
+    document.getElementById('re').innerHTML=resulte;
+    }
+
+    function sub(){
+    var num1=parseInt(document.getElementById('n1').value);
+    var num2=parseInt(document.getElementById('n2').value)
+    var resulte=num1-num2;
+    document.getElementById('re').innerHTML=resulte;
+    }
+
+    function changeText(){
+    document.getElementById('num11').style.color="green";
+    document.getElementById('num22').style.color="green";
+    }
+
+    function Background()
+    {
+        document.getElementById('n1').style.backgroundColor="red";
+    }
+
+    function turnOff(){
+        document.getElementById('img').src="turnoff1.jpg";
+    }
+
+    function turnOn(){
+        document.getElementById('img').src="turnon2.jpg";
+    }
+        </script>
+</head>
+
+
+<body>
+    <form >
+       <label id="num11" for="n1">number 1</label>
+       <input type=number id="n1"><br><br>
+       <label id="num22" for="n2">number 2: </label>
+       <input type=number id="n2"> <br><br>
+       <input type=button onclick="add();" value="add" >
+       <input type=button onclick="mul();" value="multiple" >
+       <input type=button onclick="sub();" value="sub" >
+       <input type=button onclick="Background();" value="change Background color">
+       <input type=button onclick="changeText();" value="change Text color">
+    </form>
+    <p id="re"></p>
+
+    <button onclick="turnOff();"> TurnOff The Light </button>
+    <img id="img" src="turnoff1.jpg">
+    <button onclick="turnOn();"> TurnOn The Light </button>
+  </body>
+</html>
+
