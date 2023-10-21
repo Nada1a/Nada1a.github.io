@@ -7,7 +7,7 @@ function validateForm(){
     var q=document.getElementById("Cp").value;
     var regEx=/^[A-Za-z]+$/;
     var regEx2= /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)/;
-    // user name constrain
+    //name
     if(!(x.match(regEx)))
        {document.getElementById('m1').innerHTML="* only letter is allowed";
         document.getElementById('fname').style.borderColor="red";
@@ -15,14 +15,14 @@ function validateForm(){
         else 
         {document.getElementById('m1').innerHTML=" ";
         document.getElementById('fname').style.borderColor="black"; }
-    
+    //name empty
         if((y == " ")|| (y == ""))
         { document.getElementById('m2').innerHTML="* username must be filled out";
         document.getElementById('uname').style.borderColor="red";
         r=false;}
         else{document.getElementById('m2').innerHTML=" ";
         document.getElementById('uname').style.borderColor="black"; }
-        //password constrain
+//password 
         if(z=="")
         { document.getElementById('m3').innerHTML="* password must be filled out";
         document.getElementById('pass').style.borderColor="red"; 
